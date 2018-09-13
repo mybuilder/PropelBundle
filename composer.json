@@ -1,5 +1,5 @@
 {
-  "name": "propel/propel-bundle",
+  "name": "mybuilder/propel-bundle",
   "description": "Integration of Propel in Symfony2",
   "keywords": ["propel", "orm", "persistence"],
   "type": "symfony-bundle",
@@ -17,11 +17,11 @@
 
   "require": {
     "propel/propel1": "^1.6.8",
-    "symfony/framework-bundle": "^2.8.2"
+    "symfony/framework-bundle": ">=2.8,<3.5"
   },
   "require-dev": {
-    "phpunit/phpunit": "^4.8.21|^5.0.10",
-    "symfony/symfony": "^2.8.2",
+    "phpunit/phpunit": "~6.0",
+    "symfony/symfony": ">=2.8,<3.5",
     "sensio/framework-extra-bundle": "^3.0.2",
     "fzaninotto/faker": "^1.5"
   },

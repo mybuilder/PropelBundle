@@ -134,6 +134,10 @@ class PropelExtension extends Extension
 
     public function getConfiguration(array $config, ContainerBuilder $container)
     {
+        if ($container->hasParameter('debug_pdo')) {
+            return new Configuration($container->getParameter('debug_pdo'));
+        }
+
         return new Configuration($container->getParameter('kernel.debug'));
     }
 
